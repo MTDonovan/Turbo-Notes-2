@@ -9,13 +9,13 @@ checklists with ease.
 npm install
 ```
 
-### Lint files
+## Lint files
 
 ```sh
 npm run lint
 ```
 
-### Format files
+## Format files
 
 ```sh
 npm run format
