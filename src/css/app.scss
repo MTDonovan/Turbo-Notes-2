@@ -1,1 +1,106 @@
-// app global css in SCSS form
+/** app global css in SCSS form */
+
+$default-gradient-style: linear-gradient(rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.1));
+
+// #main-notes-index {
+//     padding: 20px;
+//     display: grid;
+//     grid-template-rows: repeat(auto-fit, minmax(20px, 40px));
+//     div {
+//         grid-template-columns: 10% 90%;
+//         grid-gap: 5px;
+//     }
+// }
+
+// * {
+//   overflow-x: hidden;
+// }
+
+.checklist-title-text {
+  display: block;
+  width: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.checklist-name-in-drawer {
+  word-break: break-word;
+}
+
+.checklist-desc-in-drawer {
+  word-break: break-word;
+}
+
+.no-checklists-found-message {
+  font-size: 12pt;
+  padding: 12px;
+  font-style: italic;
+  text-align: center;
+}
+
+.no-active-checklist-found-message {
+  font-size: 12pt;
+  padding: 12px;
+  font-style: italic;
+  text-align: center;
+}
+
+.checklist-item {
+  // border-bottom: 1.5px solid lightgrey;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  word-break: break-word;
+  cursor: pointer;
+}
+
+#q-app {
+  .q-drawer-container {
+    > aside {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+.q-header {
+  // background-color: #f1bb69;
+  color: #ffffff;
+  text-shadow: none;
+  background-image: $default-gradient-style;
+}
+
+.checklist-entities-format {
+  display: grid;
+  grid-template-columns: 20% auto;
+}
+
+.checklist-button-group {
+  // position: absolute;
+  margin-right: 20px;
+  button {
+    height: 25%;
+    font-size: 16pt;
+    border-radius: 0;
+    // position: fixed;
+  }
+  button:nth-child(1) {
+    position: fixed;
+    top: 10%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    left: 0px;
+  }
+  button:nth-child(2) {
+    position: fixed;
+    top: 36%;
+    left: 0px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+}
+
+.checklist-item {
+  .handle {
+      right: 0px;
+  }
+}

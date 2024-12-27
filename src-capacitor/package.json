@@ -1,0 +1,13 @@
+{
+  "name": "turbo-notes-upgraded-js",
+  "version": "0.0.1",
+  "description": "A checklist app for the modern age",
+  "author": "MTD <MTDonovan@outlook.com>",
+  "private": true,
+  "dependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/app": "^6.0.0",
+    "@capacitor/cli": "^6.0.0",
+    "@capacitor/core": "^6.0.0"
+  }
+}

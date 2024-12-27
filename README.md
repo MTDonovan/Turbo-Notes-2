@@ -1,40 +1,22 @@
-# Quasar App (turbo-notes-upgraded-js)
+# Turbo Notes
 
-A Quasar Project
+A mobile checklist app for Android that allows users to manage multiple
+checklists with ease.
 
-## Install the dependencies
-```bash
-yarn
-# or
+## Install dependencies
+
+```sh
 npm install
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
-```
+### Lint files
 
-
-### Lint the files
-```bash
-yarn lint
-# or
+```sh
 npm run lint
 ```
 
+### Format files
 
-### Format the files
-```bash
-yarn format
-# or
+```sh
 npm run format
 ```
-
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
