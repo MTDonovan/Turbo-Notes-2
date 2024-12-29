@@ -27,9 +27,7 @@ Create a ".env.local.json" file in the top-level project directory.
 
 ```json
 {
-  "RELEASE_KEYSTORE_PATH": "<path to *.keystore file>",
-  "ANDROID_APK_SIGNER_PATH": "<path to apksigner.bat file>",
-  "ANDROID_AAPT_PATH": "<path to aapt.exe file>",
+  "RELEASE_KEYSTORE_PATH": "<path to *.jks file>",
   "ONEDRIVE_PATH": "<path to output directory>"
 }
 ```
