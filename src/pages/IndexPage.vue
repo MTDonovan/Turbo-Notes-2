@@ -156,17 +156,6 @@ export default {
     console.log(
       `[index page] Mounted with active checklist "${getters.getActiveChecklist(state).name}"`,
     )
-    this.updatePageDimensions()
-    this.$nextTick(() => {
-      window.addEventListener('resize', () => {
-        this.updatePageDimensions()
-      })
-    })
-  },
-  watch: {
-    activeChecklist() {
-      this.updatePageDimensions()
-    },
   },
   methods: {
     waitForDocumentElement(selector) {
@@ -181,12 +170,6 @@ export default {
           }
         }
         waitForElementToDisplay(selector, 100)
-      })
-    },
-    updatePageDimensions() {
-      this.waitForDocumentElement('.checklist-item').then((element) => {
-        element.setAttribute('style', `width: ${(window.innerWidth * (80 / 100)).toString()}px;`)
-        console.log('[index page] Updated checklist page dimensions')
       })
     },
     filterForSelectedChecklistItems() {
@@ -206,9 +189,6 @@ export default {
       /** Reset the relevant data points. */
       this.prompt = false
       this.tempItemText = ''
-
-      /** Update checklist page dimensions */
-      this.updatePageDimensions()
     },
     _removeSelectedChecklistItems() {
       mutations.removeSelectedChecklistItems(state, this.filterForSelectedChecklistItems())
