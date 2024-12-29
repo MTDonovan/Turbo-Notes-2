@@ -14,7 +14,7 @@
     "build": "quasar build",
     "postinstall": "quasar prepare",
     "electron:serve": "quasar dev -m electron",
-    "electron:build": "quasar build -m electron -P always --bundler builder",
+    "electron:build": "quasar build -m electron --bundler builder",
     "electron:icon": "icongenie generate -m electron -i app-icon.png",
     "android:serve": "quasar dev -m capacitor -T android",
     "android:build": "pwsh ./build-android-capacitor-apk.ps1",
