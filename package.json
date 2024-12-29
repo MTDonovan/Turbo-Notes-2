@@ -17,7 +17,7 @@
     "electron:build": "quasar build -m electron --bundler builder",
     "electron:icon": "icongenie generate -m electron -i app-icon.png",
     "android:serve": "quasar dev -m capacitor -T android",
-    "android:build": "pwsh ./build-android-capacitor-apk.ps1",
+    "android:build": "pwsh ./build-android-capacitor-aab.ps1",
     "android:icon": "icongenie generate -m capacitor -i app-icon.png"
   },
   "dependencies": {
